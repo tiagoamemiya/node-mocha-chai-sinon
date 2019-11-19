@@ -1,1 +1,1 @@
-# node-mocha-chai-sinon
+# Node (Mocha & Chai & Sinon)
