@@ -13,3 +13,8 @@ services:
     ports:
       - 5051:5051
     command: sh -c "npm install && npm run dev"
+    networks:
+      - app-network  
+networks:
+  app-network:
+    driver: bridge

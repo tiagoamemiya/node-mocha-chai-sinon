@@ -1,11 +1,11 @@
 {
   "name": "mocha-chai-sinon",
   "version": "1.0.0",
-  "description": "",
+  "description": "App Template Test Suite MVC",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r esm --inspect=0.0.0.0:9225 --nolazy --use_strict $npm_package_main"
   },
   "repository": {
     "type": "git",
@@ -39,10 +39,8 @@
     "body-parser": "^1.19.0",
     "braces": "^3.0.2",
     "dotenv": "^8.2.0",
+    "esm": "^3.2.18",
     "express": "^4.17.1",
-    "helmet": "^3.21.2",
-    "mysql2": "^2.0.0",
-    "sequelize": "^5.21.2",
-    "sequelize-cli": "^5.5.1"
+    "helmet": "^3.21.2"
   }
 }

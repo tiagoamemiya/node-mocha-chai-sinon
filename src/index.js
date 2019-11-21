@@ -1,10 +1,10 @@
-const express = require('express');
-const app = express();
+import app from './app';
 
-app.get('/', (req, res) => {
-  res.send('Working!!!');
-});
+const dotEnv = require('dotenv');
 
-app.listen(5051, () =>{
-  console.log('Running...');
+dotEnv.config();
+
+app.listen(process.env.APP_PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log('Server running');
 });
